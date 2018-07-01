@@ -23,7 +23,7 @@ def banHalf():
                 if counter % 2 == 1:
                     Subreddit.flair.set(comment.author.name,'perished')
                     Subreddit.banned.add(comment.author.name, ban_reason='The universe needs balance')
-                time.sleep(2)
+                time.sleep(30)
                 counter+= 1
                 if counter == maximum:
                     return
