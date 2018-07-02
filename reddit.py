@@ -8,7 +8,7 @@ reddit = praw.Reddit(client_id='Rh_qf9ARRcVwxw',
                      client_secret='DoFKTulIjR85XhlGuDhnrJdCTc4',
                      username='ThanosBanBot',
                      password='PASSWORD',
-                     user_agent='ThanosBot by u/XXAligatorXx')
+                     user_agent='ThanosBot 1.0')
 
 Subreddit = reddit.subreddit("thanosdidnothingwrong")
 maximum = Subreddit.subscribers
