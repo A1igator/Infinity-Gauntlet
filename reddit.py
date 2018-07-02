@@ -15,6 +15,7 @@ Subreddit = reddit.subreddit("modabuse")
 maximum = Subreddit.subscribers
 
 def banHalf():
+    random.seed()
     counter = 0;
     while True:
         for comment in Subreddit.comments():
