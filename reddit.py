@@ -17,9 +17,9 @@ maximum = Subreddit.subscribers
 def banHalf():
     counter = 0;
     while True:
-        for comment in Subreddit.comments():
-            Random = random.randint(0,1)
+        for comment in Subreddit.comments(limit=1):
             if comment.author_flair_text != 'survived' and comment.author_flair_text != 'perished':
+                Random = random.randint(0,1)
                 if Random == 0:
                     Subreddit.flair.set(comment.author.name,'survived')
                 if Random == 1:
