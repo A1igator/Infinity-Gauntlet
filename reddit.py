@@ -14,7 +14,7 @@ reddit = praw.Reddit(client_id='API INFO',
 Subreddit = reddit.subreddit("modabuse")
 maximum = Subreddit.subscribers
 
-def banHalf():
+def snap():
     random.seed()
     counter = 0;
     while True:
@@ -42,4 +42,4 @@ def banHalf():
                         counter+= 1
         if counter == maximum:
             return
-banHalf()
+snap()
