@@ -20,7 +20,7 @@ def banHalf():
             if comment.author_flair_text != 'survived' and comment.author_flair_text != 'perished':
                 if counter % 2 == 0:
                     Subreddit.flair.set(comment.author.name,'survived')
-                if counter % 2 == 1:
+                else:
                     Subreddit.flair.set(comment.author.name,'perished')
                     Subreddit.banned.add(comment.author.name, ban_reason='The universe needs balance')
                 time.sleep(30)
